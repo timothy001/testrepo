@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tbushart_4540final.xsl"?>
+<!--Tim Bushart
+ICT4540 Final Project
+November 9, 2016
+startsampledata.xml-->
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+    yahoo:count="5" yahoo:created="2016-10-25T16:58:34Z" yahoo:lang="en-US">
+    <diagnostics>
+        <url execution-start-time="0" execution-stop-time="2" execution-time="2"><![CDATA[http://www.datatables.org/yahoo/finance/yahoo.finance.quotes.xml]]></url>
+        <publiclyCallable>true</publiclyCallable>
+        <cache execution-start-time="4" execution-stop-time="4"
+            execution-time="0" method="GET" type="MEMCACHED"><![CDATA[5d1e1de680846a307c9874dc3d6878dc]]></cache>
+        <url execution-start-time="5" execution-stop-time="19" execution-time="14"><![CDATA[http://download.finance.yahoo.com/d/quotes.csv?f=aa2bb2b3b4cc1c3c4c6c8dd1d2ee1e7e8e9ghjkg1g3g4g5g6ii5j1j3j4j5j6k1k2k4k5ll1l2l3mm2m3m4m5m6m7m8nn4opp1p2p5p6qrr1r2r5r6r7ss1s7t1t7t8vv1v7ww1w4xy&s=YHOO,MSFT,INTC,FB,HPQ]]></url>
+        <query execution-start-time="5" execution-stop-time="20"
+            execution-time="15" params="{url=[http://download.finance.yahoo.com/d/quotes.csv?f=aa2bb2b3b4cc1c3c4c6c8dd1d2ee1e7e8e9ghjkg1g3g4g5g6ii5j1j3j4j5j6k1k2k4k5ll1l2l3mm2m3m4m5m6m7m8nn4opp1p2p5p6qrr1r2r5r6r7ss1s7t1t7t8vv1v7ww1w4xy&amp;s=YHOO,MSFT,INTC,FB,HPQ]}"><![CDATA[select * from csv where url=@url and columns='Ask,AverageDailyVolume,Bid,AskRealtime,BidRealtime,BookValue,Change&PercentChange,Change,Commission,Currency,ChangeRealtime,AfterHoursChangeRealtime,DividendShare,LastTradeDate,TradeDate,EarningsShare,ErrorIndicationreturnedforsymbolchangedinvalid,EPSEstimateCurrentYear,EPSEstimateNextYear,EPSEstimateNextQuarter,DaysLow,DaysHigh,YearLow,YearHigh,HoldingsGainPercent,AnnualizedGain,HoldingsGain,HoldingsGainPercentRealtime,HoldingsGainRealtime,MoreInfo,OrderBookRealtime,MarketCapitalization,MarketCapRealtime,EBITDA,ChangeFromYearLow,PercentChangeFromYearLow,LastTradeRealtimeWithTime,ChangePercentRealtime,ChangeFromYearHigh,PercebtChangeFromYearHigh,LastTradeWithTime,LastTradePriceOnly,HighLimit,LowLimit,DaysRange,DaysRangeRealtime,FiftydayMovingAverage,TwoHundreddayMovingAverage,ChangeFromTwoHundreddayMovingAverage,PercentChangeFromTwoHundreddayMovingAverage,ChangeFromFiftydayMovingAverage,PercentChangeFromFiftydayMovingAverage,Name,Notes,Open,PreviousClose,PricePaid,ChangeinPercent,PriceSales,PriceBook,ExDividendDate,PERatio,DividendPayDate,PERatioRealtime,PEGRatio,PriceEPSEstimateCurrentYear,PriceEPSEstimateNextYear,Symbol,SharesOwned,ShortRatio,LastTradeTime,TickerTrend,OneyrTargetPrice,Volume,HoldingsValue,HoldingsValueRealtime,YearRange,DaysValueChange,DaysValueChangeRealtime,StockExchange,DividendYield']]></query>
+        <javascript execution-start-time="3" execution-stop-time="56"
+            execution-time="53" instructions-used="339005" table-name="yahoo.finance.quotes"/>
+        <user-time>58</user-time>
+        <service-time>16</service-time>
+        <build-version>2.0.75</build-version>
+    </diagnostics> 
+    <results>
+        <quote symbol="YHOO">
+            <Ask>42.67</Ask>
+            <AverageDailyVolume>11451100</AverageDailyVolume>
+            <Bid>42.66</Bid>
+            <AskRealtime/>
+            <BidRealtime/>
+            <BookValue>36.39</BookValue>
+            <Change_PercentChange>+0.08 - +0.19%</Change_PercentChange>
+            <Change>+0.08</Change>
+            <Commission/>
+            <Currency>USD</Currency>
+            <ChangeRealtime/>
+            <AfterHoursChangeRealtime/>
+            <DividendShare/>
+            <LastTradeDate>10/25/2016</LastTradeDate>
+            <TradeDate/>
+            <EarningsShare>-5.11</EarningsShare>
+            <ErrorIndicationreturnedforsymbolchangedinvalid/>
+            <EPSEstimateCurrentYear>0.56</EPSEstimateCurrentYear>
+            <EPSEstimateNextYear>0.63</EPSEstimateNextYear>
+            <EPSEstimateNextQuarter>0.14</EPSEstimateNextQuarter>
+            <DaysLow>42.43</DaysLow>
+            <DaysHigh>42.75</DaysHigh>
+            <YearLow>26.15</YearLow>
+            <YearHigh>44.92</YearHigh>
+            <HoldingsGainPercent/>
+            <AnnualizedGain/>
+            <HoldingsGain/>
+            <HoldingsGainPercentRealtime/>
+            <HoldingsGainRealtime/>
+            <MoreInfo/>
+            <OrderBookRealtime/>
+			<OneYearReturn>28.28</OneYearReturn>
+            <MarketCapitalization>40.85B</MarketCapitalization>
+            <MarketCapRealtime/>
+            <EBITDA>90.38M</EBITDA>
+            <ChangeFromYearLow>16.52</ChangeFromYearLow>
+            <PercentChangeFromYearLow>+63.17%</PercentChangeFromYearLow>
+            <LastTradeRealtimeWithTime/>
+            <ChangePercentRealtime/>
+            <ChangeFromYearHigh>-2.25</ChangeFromYearHigh>
+            <PercebtChangeFromYearHigh>-5.01%</PercebtChangeFromYearHigh>
+            <LastTradeWithTime>12:43pm - &lt;b&gt;42.67&lt;/b&gt;</LastTradeWithTime>
+            <LastTradePriceOnly>42.67</LastTradePriceOnly>
+            <HighLimit/>
+            <LowLimit/>
+            <DaysRange>42.43 - 42.75</DaysRange>
+            <DaysRangeRealtime/>
+            <FiftydayMovingAverage>43.10</FiftydayMovingAverage>
+            <TwoHundreddayMovingAverage>39.47</TwoHundreddayMovingAverage>
+            <ChangeFromTwoHundreddayMovingAverage>3.20</ChangeFromTwoHundreddayMovingAverage>
+            <PercentChangeFromTwoHundreddayMovingAverage>+8.12%</PercentChangeFromTwoHundreddayMovingAverage>
+            <ChangeFromFiftydayMovingAverage>-0.43</ChangeFromFiftydayMovingAverage>
+            <PercentChangeFromFiftydayMovingAverage>-0.99%</PercentChangeFromFiftydayMovingAverage>
+            <Name>Yahoo! Inc.</Name>
+            <Notes/>
+            <Open>42.72</Open>
+            <PreviousClose>42.59</PreviousClose>
+            <PricePaid/>
+            <ChangeinPercent>+0.19%</ChangeinPercent>
+            <PriceSales>8.20</PriceSales>
+            <PriceBook>1.17</PriceBook>
+            <ExDividendDate/>
+            <PERatio/>
+            <DividendPayDate/>
+            <PERatioRealtime/>
+            <PEGRatio>-128.83</PEGRatio>
+            <PriceEPSEstimateCurrentYear>74.86</PriceEPSEstimateCurrentYear>
+            <PriceEPSEstimateNextYear>67.73</PriceEPSEstimateNextYear>
+            <Symbol>YHOO</Symbol>
+            <SharesOwned/>
+            <ShortRatio>3.78</ShortRatio>
+            <LastTradeTime>12:43pm</LastTradeTime>
+            <TickerTrend/>
+            <OneyrTargetPrice>45.45</OneyrTargetPrice>
+            <Volume>2192538</Volume>
+            <HoldingsValue/>
+            <HoldingsValueRealtime/>
+            <YearRange>26.15 - 44.92</YearRange>
+            <DaysValueChange/>
+            <DaysValueChangeRealtime/>
+            <StockExchange>NMS</StockExchange>
+            <DividendYield/>
+            <PercentChange>+0.19%</PercentChange>
+        </quote>
+        <quote symbol="MSFT">
+            <Ask>60.91</Ask>
+            <AverageDailyVolume>24730400</AverageDailyVolume>
+            <Bid>60.90</Bid>
+            <AskRealtime/>
+            <BidRealtime/>
+            <BookValue>9.04</BookValue>
+            <Change_PercentChange>-0.09 - -0.15%</Change_PercentChange>
+            <Change>-0.09</Change>
+            <Commission/>
+            <Currency>USD</Currency>
+            <ChangeRealtime/>
+            <AfterHoursChangeRealtime/>
+            <DividendShare>1.56</DividendShare>
+            <LastTradeDate>10/25/2016</LastTradeDate>
+            <TradeDate/>
+			<FiveYearReturn>124.56</FiveYearReturn>
+            <EarningsShare>2.09</EarningsShare>
+            <ErrorIndicationreturnedforsymbolchangedinvalid/>
+            <EPSEstimateCurrentYear>2.89</EPSEstimateCurrentYear>
+            <EPSEstimateNextYear>3.23</EPSEstimateNextYear>
+            <EPSEstimateNextQuarter>0.71</EPSEstimateNextQuarter>
+            <DaysLow>60.80</DaysLow>
+            <DaysHigh>61.37</DaysHigh>
+            <YearLow>48.04</YearLow>
+            <YearHigh>61.37</YearHigh>
+            <HoldingsGainPercent/>
+            <AnnualizedGain/>
+            <HoldingsGain/>
+            <HoldingsGainPercentRealtime/>
+            <HoldingsGainRealtime/>
+            <MoreInfo/>
+            <OrderBookRealtime/>
+			<OneYearReturn>15.36</OneYearReturn>
+            <MarketCapitalization>473.60B</MarketCapitalization>
+            <MarketCapRealtime/>
+            <EBITDA>26.96B</EBITDA>
+            <ChangeFromYearLow>12.87</ChangeFromYearLow>
+            <PercentChangeFromYearLow>+26.79%</PercentChangeFromYearLow>
+            <LastTradeRealtimeWithTime/>
+            <ChangePercentRealtime/>
+            <ChangeFromYearHigh>-0.46</ChangeFromYearHigh>
+            <PercebtChangeFromYearHigh>-0.75%</PercebtChangeFromYearHigh>
+            <LastTradeWithTime>12:43pm - &lt;b&gt;60.91&lt;/b&gt;</LastTradeWithTime>
+            <LastTradePriceOnly>60.91</LastTradePriceOnly>
+            <HighLimit/>
+            <LowLimit/>
+            <DaysRange>60.80 - 61.37</DaysRange>
+            <DaysRangeRealtime/>
+            <FiftydayMovingAverage>57.50</FiftydayMovingAverage>
+            <TwoHundreddayMovingAverage>54.59</TwoHundreddayMovingAverage>
+            <ChangeFromTwoHundreddayMovingAverage>6.32</ChangeFromTwoHundreddayMovingAverage>
+            <PercentChangeFromTwoHundreddayMovingAverage>+11.58%</PercentChangeFromTwoHundreddayMovingAverage>
+            <ChangeFromFiftydayMovingAverage>3.41</ChangeFromFiftydayMovingAverage>
+            <PercentChangeFromFiftydayMovingAverage>+5.92%</PercentChangeFromFiftydayMovingAverage>
+            <Name>Microsoft Corporation</Name>
+            <Notes/>
+            <Open>60.85</Open>
+            <PreviousClose>61.00</PreviousClose>
+            <PricePaid/>
+            <ChangeinPercent>-0.15%</ChangeinPercent>
+            <PriceSales>5.55</PriceSales>
+            <PriceBook>6.75</PriceBook>
+            <ExDividendDate>8/16/2016</ExDividendDate>
+            <PERatio>29.17</PERatio>
+            <DividendPayDate>12/8/2016</DividendPayDate>
+            <PERatioRealtime/>
+            <PEGRatio>2.20</PEGRatio>
+            <PriceEPSEstimateCurrentYear>20.65</PriceEPSEstimateCurrentYear>
+            <PriceEPSEstimateNextYear>18.86</PriceEPSEstimateNextYear>
+            <Symbol>MSFT</Symbol>
+            <SharesOwned/>
+            <ShortRatio>1.94</ShortRatio>
+            <LastTradeTime>12:43pm</LastTradeTime>
+            <TickerTrend/>
+            <OneyrTargetPrice>62.09</OneyrTargetPrice>
+            <Volume>20876074</Volume>
+            <HoldingsValue/>
+            <HoldingsValueRealtime/>
+            <YearRange>48.04 - 61.37</YearRange>
+            <DaysValueChange/>
+            <DaysValueChangeRealtime/>
+            <StockExchange>NMS</StockExchange>
+            <DividendYield>2.61</DividendYield>
+            <PercentChange>-0.15%</PercentChange>
+        </quote>
+        <quote symbol="INTC">
+            <Ask>35.020</Ask>
+            <AverageDailyVolume>21335300</AverageDailyVolume>
+            <Bid>35.010</Bid>
+            <AskRealtime/>
+            <BidRealtime/>
+            <BookValue>12.979</BookValue>
+            <Change_PercentChange>-0.249 - -0.706%</Change_PercentChange>
+            <Change>-0.249</Change>
+            <Commission/>
+            <Currency>USD</Currency>
+            <ChangeRealtime/>
+            <AfterHoursChangeRealtime/>
+            <DividendShare>1.040</DividendShare>
+            <LastTradeDate>10/25/2016</LastTradeDate>
+            <TradeDate/>
+            <EarningsShare>2.062</EarningsShare>
+            <ErrorIndicationreturnedforsymbolchangedinvalid/>
+            <EPSEstimateCurrentYear>2.660</EPSEstimateCurrentYear>
+            <EPSEstimateNextYear>2.810</EPSEstimateNextYear>
+            <EPSEstimateNextQuarter>0.610</EPSEstimateNextQuarter>
+            <DaysLow>35.010</DaysLow>
+            <DaysHigh>35.250</DaysHigh>
+            <YearLow>27.680</YearLow>
+            <YearHigh>38.360</YearHigh>
+            <HoldingsGainPercent/>
+            <AnnualizedGain/>
+            <HoldingsGain/>
+            <HoldingsGainPercentRealtime/>
+            <HoldingsGainRealtime/>
+            <MoreInfo/>
+            <OrderBookRealtime/>
+			<OneYearReturn>.57</OneYearReturn>
+            <MarketCapitalization>165.64B</MarketCapitalization>
+            <MarketCapRealtime/>
+            <EBITDA>22.53B</EBITDA>
+            <ChangeFromYearLow>7.331</ChangeFromYearLow>
+            <PercentChangeFromYearLow>+26.485%</PercentChangeFromYearLow>
+            <LastTradeRealtimeWithTime/>
+            <ChangePercentRealtime/>
+            <ChangeFromYearHigh>-3.349</ChangeFromYearHigh>
+            <PercebtChangeFromYearHigh>-8.730%</PercebtChangeFromYearHigh>
+            <LastTradeWithTime>12:43pm - &lt;b&gt;35.011&lt;/b&gt;</LastTradeWithTime>
+            <LastTradePriceOnly>35.011</LastTradePriceOnly>
+            <HighLimit/>
+            <LowLimit/>
+            <DaysRange>35.010 - 35.250</DaysRange>
+            <DaysRangeRealtime/>
+            <FiftydayMovingAverage>36.911</FiftydayMovingAverage>
+            <TwoHundreddayMovingAverage>33.842</TwoHundreddayMovingAverage>
+            <ChangeFromTwoHundreddayMovingAverage>1.169</ChangeFromTwoHundreddayMovingAverage>
+            <PercentChangeFromTwoHundreddayMovingAverage>+3.456%</PercentChangeFromTwoHundreddayMovingAverage>
+            <ChangeFromFiftydayMovingAverage>-1.900</ChangeFromFiftydayMovingAverage>
+            <PercentChangeFromFiftydayMovingAverage>-5.146%</PercentChangeFromFiftydayMovingAverage>
+            <Name>Intel Corporation</Name>
+            <Notes/>
+            <Open>35.140</Open>
+            <PreviousClose>35.260</PreviousClose>
+            <PricePaid/>
+            <ChangeinPercent>-0.706%</ChangeinPercent>
+            <PriceSales>2.947</PriceSales>
+            <PriceBook>2.717</PriceBook>
+            <ExDividendDate>8/3/2016</ExDividendDate>
+            <PERatio>16.979</PERatio>
+            <DividendPayDate>12/1/2016</DividendPayDate>
+            <PERatioRealtime/>
+            <PEGRatio>1.330</PEGRatio>
+            <PriceEPSEstimateCurrentYear>13.162</PriceEPSEstimateCurrentYear>
+            <PriceEPSEstimateNextYear>12.459</PriceEPSEstimateNextYear>
+            <Symbol>INTC</Symbol>
+            <SharesOwned/>
+            <ShortRatio>3.200</ShortRatio>
+            <LastTradeTime>12:43pm</LastTradeTime>
+            <TickerTrend/>
+            <OneyrTargetPrice>40.090</OneyrTargetPrice>
+            <Volume>8248099</Volume>
+            <HoldingsValue/>
+            <HoldingsValueRealtime/>
+            <YearRange>27.680 - 38.360</YearRange>
+            <DaysValueChange/>
+            <DaysValueChangeRealtime/>
+            <StockExchange>NMS</StockExchange>
+            <DividendYield>2.960</DividendYield>
+            <PercentChange>-0.706%</PercentChange>
+        </quote>
+        <quote symbol="FB">
+            <Ask>132.51</Ask>
+            <AverageDailyVolume>18072900</AverageDailyVolume>
+            <Bid>132.50</Bid>
+            <AskRealtime/>
+            <BidRealtime/>
+            <BookValue>17.60</BookValue>
+            <Change_PercentChange>-0.78 - -0.59%</Change_PercentChange>
+            <Change>-0.78</Change>
+            <Commission/>
+            <Currency>USD</Currency>
+            <ChangeRealtime/>
+            <AfterHoursChangeRealtime/>
+            <DividendShare/>
+            <LastTradeDate>10/25/2016</LastTradeDate>
+            <TradeDate/>
+            <EarningsShare>2.09</EarningsShare>
+            <ErrorIndicationreturnedforsymbolchangedinvalid/>
+            <EPSEstimateCurrentYear>3.94</EPSEstimateCurrentYear>
+            <EPSEstimateNextYear>5.08</EPSEstimateNextYear>
+            <EPSEstimateNextQuarter>1.25</EPSEstimateNextQuarter>
+            <DaysLow>132.50</DaysLow>
+            <DaysHigh>133.50</DaysHigh>
+            <YearLow>89.37</YearLow>
+            <YearHigh>133.50</YearHigh>
+            <HoldingsGainPercent/>
+            <AnnualizedGain/>
+            <HoldingsGain/>
+            <HoldingsGainPercentRealtime/>
+            <HoldingsGainRealtime/>
+            <MoreInfo/>
+            <OrderBookRealtime/>
+			<OneYearReturn>29.45</OneYearReturn>
+            <MarketCapitalization>380.50B</MarketCapitalization>
+            <MarketCapRealtime/>
+            <EBITDA>11.08B</EBITDA>
+            <ChangeFromYearLow>43.13</ChangeFromYearLow>
+            <PercentChangeFromYearLow>+48.26%</PercentChangeFromYearLow>
+            <LastTradeRealtimeWithTime/>
+            <ChangePercentRealtime/>
+            <ChangeFromYearHigh>-1.00</ChangeFromYearHigh>
+            <PercebtChangeFromYearHigh>-0.75%</PercebtChangeFromYearHigh>
+            <LastTradeWithTime>12:43pm - &lt;b&gt;132.50&lt;/b&gt;</LastTradeWithTime>
+            <LastTradePriceOnly>132.50</LastTradePriceOnly>
+            <HighLimit/>
+            <LowLimit/>
+            <DaysRange>132.50 - 133.50</DaysRange>
+            <DaysRangeRealtime/>
+            <FiftydayMovingAverage>128.99</FiftydayMovingAverage>
+            <TwoHundreddayMovingAverage>121.01</TwoHundreddayMovingAverage>
+            <ChangeFromTwoHundreddayMovingAverage>11.49</ChangeFromTwoHundreddayMovingAverage>
+            <PercentChangeFromTwoHundreddayMovingAverage>+9.50%</PercentChangeFromTwoHundreddayMovingAverage>
+            <ChangeFromFiftydayMovingAverage>3.51</ChangeFromFiftydayMovingAverage>
+            <PercentChangeFromFiftydayMovingAverage>+2.72%</PercentChangeFromFiftydayMovingAverage>
+            <Name>Facebook, Inc.</Name>
+            <Notes/>
+            <Open>133.50</Open>
+            <PreviousClose>133.28</PreviousClose>
+            <PricePaid/>
+            <ChangeinPercent>-0.59%</ChangeinPercent>
+            <PriceSales>17.27</PriceSales>
+            <PriceBook>7.57</PriceBook>
+            <ExDividendDate/>
+            <PERatio>63.34</PERatio>
+            <DividendPayDate/>
+            <PERatioRealtime/>
+            <PEGRatio>0.96</PEGRatio>
+            <PriceEPSEstimateCurrentYear>33.63</PriceEPSEstimateCurrentYear>
+            <PriceEPSEstimateNextYear>26.08</PriceEPSEstimateNextYear>
+            <Symbol>FB</Symbol>
+            <SharesOwned/>
+            <ShortRatio>1.26</ShortRatio>
+            <LastTradeTime>12:43pm</LastTradeTime>
+            <TickerTrend/>
+            <OneyrTargetPrice>156.84</OneyrTargetPrice>
+            <Volume>7753567</Volume>
+            <HoldingsValue/>
+            <HoldingsValueRealtime/>
+            <YearRange>89.37 - 133.50</YearRange>
+            <DaysValueChange/>
+            <DaysValueChangeRealtime/>
+            <StockExchange>NMS</StockExchange>
+            <DividendYield/>
+            <PercentChange>-0.59%</PercentChange>
+        </quote>
+        <quote symbol="HPQ">
+            <Ask>13.9100</Ask>
+            <AverageDailyVolume>11788400</AverageDailyVolume>
+            <Bid>13.9000</Bid>
+            <AskRealtime/>
+            <BidRealtime/>
+            <BookValue>-2.2950</BookValue>
+            <Change_PercentChange>-0.0601 - -0.4302%</Change_PercentChange>
+            <Change>-0.0601</Change>
+            <Commission/>
+            <Currency>USD</Currency>
+            <ChangeRealtime/>
+            <AfterHoursChangeRealtime/>
+            <DividendShare>0.5000</DividendShare>
+            <LastTradeDate>10/25/2016</LastTradeDate>
+            <TradeDate/>
+            <EarningsShare>1.8780</EarningsShare>
+            <ErrorIndicationreturnedforsymbolchangedinvalid/>
+            <EPSEstimateCurrentYear>1.6100</EPSEstimateCurrentYear>
+            <EPSEstimateNextYear>1.6000</EPSEstimateNextYear>
+            <EPSEstimateNextQuarter>0.3800</EPSEstimateNextQuarter>
+            <DaysLow>13.8800</DaysLow>
+            <DaysHigh>13.9900</DaysHigh>
+            <YearLow>8.9100</YearLow>
+            <YearHigh>15.8800</YearHigh>
+            <HoldingsGainPercent/>
+            <AnnualizedGain/>
+            <HoldingsGain/>
+            <HoldingsGainPercentRealtime/>
+            <HoldingsGainRealtime/>
+            <MoreInfo/>
+            <OrderBookRealtime/>
+			<OneYearReturn>15.83</OneYearReturn>
+            <MarketCapitalization>23.80B</MarketCapitalization>
+            <MarketCapRealtime/>
+            <EBITDA>9.36B</EBITDA>
+            <ChangeFromYearLow>4.9999</ChangeFromYearLow>
+            <PercentChangeFromYearLow>+56.1156%</PercentChangeFromYearLow>
+            <LastTradeRealtimeWithTime/>
+            <ChangePercentRealtime/>
+            <ChangeFromYearHigh>-1.9701</ChangeFromYearHigh>
+            <PercebtChangeFromYearHigh>-12.4062%</PercebtChangeFromYearHigh>
+            <LastTradeWithTime>12:43pm - &lt;b&gt;13.9099&lt;/b&gt;</LastTradeWithTime>
+            <LastTradePriceOnly>13.9099</LastTradePriceOnly>
+            <HighLimit/>
+            <LowLimit/>
+            <DaysRange>13.8800 - 13.9900</DaysRange>
+            <DaysRangeRealtime/>
+            <FiftydayMovingAverage>14.8320</FiftydayMovingAverage>
+            <TwoHundreddayMovingAverage>13.5748</TwoHundreddayMovingAverage>
+            <ChangeFromTwoHundreddayMovingAverage>0.3351</ChangeFromTwoHundreddayMovingAverage>
+            <PercentChangeFromTwoHundreddayMovingAverage>+2.4685%</PercentChangeFromTwoHundreddayMovingAverage>
+            <ChangeFromFiftydayMovingAverage>-0.9221</ChangeFromFiftydayMovingAverage>
+            <PercentChangeFromFiftydayMovingAverage>-6.2170%</PercentChangeFromFiftydayMovingAverage>
+            <Name>HP Inc. Common Stock</Name>
+            <Notes/>
+            <Open>13.9700</Open>
+            <PreviousClose>13.9700</PreviousClose>
+            <PricePaid/>
+            <ChangeinPercent>-0.4302%</ChangeinPercent>
+            <PriceSales>0.2393</PriceSales>
+            <PriceBook/>
+            <ExDividendDate>9/12/2016</ExDividendDate>
+            <PERatio>7.4068</PERatio>
+            <DividendPayDate>10/5/2016</DividendPayDate>
+            <PERatioRealtime/>
+            <PEGRatio>3.9500</PEGRatio>
+            <PriceEPSEstimateCurrentYear>8.6397</PriceEPSEstimateCurrentYear>
+            <PriceEPSEstimateNextYear>8.6937</PriceEPSEstimateNextYear>
+            <Symbol>HPQ</Symbol>
+            <SharesOwned/>
+            <ShortRatio>2.6900</ShortRatio>
+            <LastTradeTime>12:43pm</LastTradeTime>
+            <TickerTrend/>
+            <OneyrTargetPrice>16.3500</OneyrTargetPrice>
+            <Volume>5085731</Volume>
+            <HoldingsValue/>
+            <HoldingsValueRealtime/>
+            <YearRange>8.9100 - 15.8800</YearRange>
+            <DaysValueChange/>
+            <DaysValueChangeRealtime/>
+            <StockExchange>NYQ</StockExchange>
+            <DividendYield>3.5900</DividendYield>
+            <PercentChange>-0.4302%</PercentChange>
+        </quote>
+    </results>
+</query>
